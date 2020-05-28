@@ -44,7 +44,7 @@ while True:
         sims.append(sim)
     
     if np.max(sims) > 0.58:
-        print(np.max(sims), np.min(sims), sims)
+        print(np.max(sims), np.min(sims))
         idx = np.argmin(sims)
         x, y = locs[idx]
         pyautogui.moveTo(y + 80, x + 25 + 77)
