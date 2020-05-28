@@ -1,7 +1,7 @@
 # Mining_Tale_of_Wuxia
 
 ## 侠客风云传自动采矿
-- 对比每个坑的直方图与一个基准坑(没有矿的地鼠)的相似度
+- 对比每个坑图片的直方图与一个基准坑图片![Base](https://github.com/AnxietyYoungPoet/Mining_Tale_of_Wuxia/blob/master/base.png?raw=true)直方图的相似度
 - 相似度最小的说明该坑有矿,移动鼠标到该位置, 点击.
 
 ## 使用方法
