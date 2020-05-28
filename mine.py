@@ -26,15 +26,13 @@ locs = [
     (494, 226), (503, 507), (503, 794), (504, 1080), (503, 1362),
     (733, 387), (751, 662), (755, 932), (733, 1205)
     ]
-# hwnd = win32gui.FindWindow(None, 'Tale of Wuxia 1.0.3.2(1.0.3.2)')
+
 hwnd = win32gui.FindWindow(None, 'Tale of Wuxia 1.0.3.2(1.0.3.2)')
 print(hwnd)
 app = QApplication(sys.argv)
 screen = QApplication.primaryScreen()
 
 while True:
-    # hwnd = win32gui.FindWindow(None, 'Sublime Text')
-
     img = screen.grabWindow(hwnd).toImage()
     img = q2n.rgb_view(img)
 
@@ -53,7 +51,4 @@ while True:
         pyautogui.click()
         pyautogui.moveTo(100, 100)
         time.sleep(1)
-        # print(np.argmin(sims))
-        # img = Image.fromarray(img, 'RGB')
-        # img.show()
     time.sleep(0.1)
